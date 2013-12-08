@@ -39,6 +39,11 @@
     return [self initWithItemName:@"Item" valueInDollars:0 serialNumber:@""];
 }
 
+- (id)initWithItemName:(NSString *)name serialNumber:(NSString *)serial
+{
+    return [self initWithItemName:name valueInDollars:0 serialNumber:serial];
+}
+
 - (id)initWithItemName:(NSString *)name valueInDollars:(int)value serialNumber:(NSString *)serial
 {
     self = [super init];
